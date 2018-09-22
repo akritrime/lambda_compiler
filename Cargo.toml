@@ -1,0 +1,6 @@
+[package]
+name = "lambda_compiler"
+version = "0.1.0"
+authors = ["akritrime <akritrime@gmail.com>"]
+
+[dependencies]
