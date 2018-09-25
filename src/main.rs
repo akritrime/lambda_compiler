@@ -289,7 +289,7 @@ fn execute(node: ASTNode) -> Result<Vec<isize>, String> {
 }
 
 fn main() {
-    let tokens = tokenizer("(add 24 3 (subtract 3 1 5))").unwrap();
+    let tokens = tokenizer("(add 24 3 (subtract (add 8 10) (add 1 5)))").unwrap();
     println!("{:?}", execute(parser(tokens)));
     // for _ in 0..12 {
     //     println!("{:?}", tokens.next());
